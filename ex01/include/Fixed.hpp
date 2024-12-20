@@ -6,7 +6,7 @@
 /*   By: nrobinso <nrobinso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 10:09:31 by nrobinso          #+#    #+#             */
-/*   Updated: 2024/12/20 12:47:32 by nrobinso         ###   ########.fr       */
+/*   Updated: 2024/12/20 17:14:37 by nrobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 
 #include <iostream>
 #include <string>
+#include <cmath>
 
 class Fixed {
 
@@ -25,13 +26,17 @@ class Fixed {
         ~Fixed(void);
         Fixed(const Fixed& ex);
         Fixed &operator=(const Fixed& ex);
-        int getRawBits( void );
-        int getRawBits( const Fixed& e );
+        Fixed(const float nbr);
+        int getRawBits( void ) const;
+        float toFloat(void) const;
+
 
     private:
     
         int _fixedPoint;
         static const int _fractionBits;
 };
+
+std::ostream &operator<<(std::ostream &os, const Fixed &fixed);
 
 #endif
