@@ -6,7 +6,7 @@
 /*   By: nrobinso <nrobinso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 10:09:31 by nrobinso          #+#    #+#             */
-/*   Updated: 2024/12/20 17:14:37 by nrobinso         ###   ########.fr       */
+/*   Updated: 2024/12/23 12:04:37 by nrobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,11 @@ class Fixed {
         ~Fixed(void);
         Fixed(const Fixed& ex);
         Fixed &operator=(const Fixed& ex);
+        Fixed(const int nbr);
         Fixed(const float nbr);
         int getRawBits( void ) const;
         float toFloat(void) const;
+        int toInt(void) const;
 
 
     private:
@@ -37,6 +39,6 @@ class Fixed {
         static const int _fractionBits;
 };
 
-std::ostream &operator<<(std::ostream &os, const Fixed &fixed);
+std::ostream &operator<<(std::ostream &outputstream, const Fixed &fixed);
 
 #endif
