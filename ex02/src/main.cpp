@@ -6,7 +6,7 @@
 /*   By: nrobinso <nrobinso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 10:06:58 by nrobinso          #+#    #+#             */
-/*   Updated: 2025/01/06 16:30:53 by nrobinso         ###   ########.fr       */
+/*   Updated: 2025/01/06 16:52:12 by nrobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ std::cout << c << std::endl;
 std::cout << ++a << std::endl;
 std::cout << c++ << std::endl;
 std::cout << a << std::endl;
-std::cout << c  << std::endl;
+std::cout << a+c << std::endl;
 std::cout << a++ << std::endl;
 std::cout << a << std::endl;
 //std::cout << b << std::endl;

@@ -6,7 +6,7 @@
 /*   By: nrobinso <nrobinso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 10:10:02 by nrobinso          #+#    #+#             */
-/*   Updated: 2025/01/06 16:30:56 by nrobinso         ###   ########.fr       */
+/*   Updated: 2025/01/06 16:58:54 by nrobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ Fixed Fixed::operator--(int) {
 Fixed Fixed::operator+(const Fixed& fixed) const {
 
 
-    return (this->_fixedPoint + fixed._fixedPoint);
+    return Fixed((this->toFloat() + fixed.toFloat()));
     
 };
 
