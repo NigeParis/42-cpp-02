@@ -6,7 +6,7 @@
 /*   By: nrobinso <nrobinso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 10:10:02 by nrobinso          #+#    #+#             */
-/*   Updated: 2025/01/06 16:58:54 by nrobinso         ###   ########.fr       */
+/*   Updated: 2025/01/07 09:01:20 by nrobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,10 @@ Fixed::Fixed( void ): _fixedPoint(0) {
     // std::cout << "Default constructor called" << std::endl;
 };
 
-
 Fixed::Fixed(const Fixed    &fixed) {
     // std::cout << "Copy constructor called" << std::endl;
     this->_fixedPoint = fixed._fixedPoint;
 }; 
-
-
 
 Fixed &Fixed::operator=(const Fixed& nbr) {
     // std::cout << "Copy assignment operator called" << std::endl;
@@ -33,6 +30,11 @@ Fixed &Fixed::operator=(const Fixed& nbr) {
         this->_fixedPoint = nbr.getRawBits();
     return (*this);
 };
+
+Fixed::~Fixed(void) {
+    // std::cout << "Destructor called" << std::endl;
+};
+
 
 Fixed &Fixed::operator++(void) {
 
@@ -64,19 +66,42 @@ Fixed Fixed::operator--(int) {
     return (temp);
 };
 
+
 Fixed Fixed::operator+(const Fixed& fixed) const {
-
-
-    return Fixed((this->toFloat() + fixed.toFloat()));
     
+    return Fixed((this->toFloat() + fixed.toFloat()));    
+};
+
+Fixed Fixed::operator-(const Fixed& fixed) const {
+    
+    return Fixed((this->toFloat() - fixed.toFloat()));    
+};
+
+Fixed Fixed::operator*(const Fixed& fixed) const {
+    
+    return Fixed((this->toFloat() * fixed.toFloat()));    
+};
+
+Fixed Fixed::operator/(const Fixed& fixed) const {
+    
+    return Fixed((this->toFloat() / fixed.toFloat()));    
 };
 
 
-
-
-Fixed::~Fixed(void) {
-    // std::cout << "Destructor called" << std::endl;
+bool Fixed::operator<(const Fixed& fixed) const {
+    
+    if (this->toFloat() < fixed.toFloat())
+        return (true);
+    return (false);    
 };
+
+bool Fixed::operator<=(const Fixed& fixed) const {
+    
+    if (this->toFloat() <= fixed.toFloat())
+        return (true);
+    return (false);    
+};
+
 
 
 Fixed::Fixed( const int nbr ) { 
