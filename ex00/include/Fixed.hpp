@@ -6,7 +6,7 @@
 /*   By: nrobinso <nrobinso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 10:09:31 by nrobinso          #+#    #+#             */
-/*   Updated: 2024/12/20 17:17:15 by nrobinso         ###   ########.fr       */
+/*   Updated: 2025/01/07 14:44:30 by nrobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,9 @@ class Fixed {
 
         Fixed(void);
         ~Fixed(void);
-        Fixed(const Fixed& ex);
-        Fixed &operator=(const Fixed& ex);
-        int getRawBits( void );
-        int getRawBits( const Fixed& e );
+        Fixed(const Fixed& fixed);
+        Fixed &operator=(const Fixed& fixed);
+        int getRawBits( void ) const;
         void setRawBits( int const raw );
 
     private:

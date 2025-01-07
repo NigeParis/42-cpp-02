@@ -6,7 +6,7 @@
 /*   By: nrobinso <nrobinso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 10:10:02 by nrobinso          #+#    #+#             */
-/*   Updated: 2025/01/06 13:31:06 by nrobinso         ###   ########.fr       */
+/*   Updated: 2025/01/07 11:37:02 by nrobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,7 @@ int Fixed::getRawBits( void ) const {
     return (this->_fixedPoint);
     
 };
+
 
 float Fixed::toFloat(void) const {
 
