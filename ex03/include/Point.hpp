@@ -6,7 +6,7 @@
 /*   By: nrobinso <nrobinso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 09:36:10 by nrobinso          #+#    #+#             */
-/*   Updated: 2025/01/08 12:00:47 by nrobinso         ###   ########.fr       */
+/*   Updated: 2025/01/08 16:12:19 by nrobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,11 @@
 #include <iomanip>
 #include "./include/Fixed.hpp"
 
-
 class Point {
 
     public :
                 Point(void);
                 Point(const float x, const float y);
-
 
                 Point(Point const &point);
                 Point &operator=(const Point &point);
@@ -37,11 +35,8 @@ class Point {
                 const Fixed _x;
                 const Fixed _y;
                 
-        
-    
 };
 
 std::ostream &operator<<(std::ostream &outputstream, const Point &point);
-
 
 #endif
