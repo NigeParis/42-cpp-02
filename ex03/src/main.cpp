@@ -6,7 +6,7 @@
 /*   By: nrobinso <nrobinso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 10:06:58 by nrobinso          #+#    #+#             */
-/*   Updated: 2025/01/08 14:20:00 by nrobinso         ###   ########.fr       */
+/*   Updated: 2025/01/08 16:07:46 by nrobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,21 +17,15 @@
 
 int main( void ) {
 
-    Point a(9.02f, 11.84f);
-    Point b(3.51f, 5.32f);
-    Point c(11.94f, 3.55f);
-    Point point(5.87f, 8.14f);
-    
-    std::cout << "point a : " << a << std::endl;
-    std::cout << "point b : " << b << std::endl;
-    std::cout << "point c : " << c << std::endl;
-    std::cout << "point ? : " << point << std::endl;
+    Point a(0.0f, 0.0f);
+    Point b(0.0f, 4.0f);
+    Point c(6.0f, 0.0f);
+    Point point(2.5f, 0.00f);
 
     if (bsp(a, b, c, point))
-        std::cout << "Point inside triangle" << std::endl;
+        std::cout << "Point is inside the triangle" << std::endl;
     else
-        std::cout << "Point NOT inside triangle" << std::endl;
-    
-
+        std::cout << "Point NOT inside the triangle" << std::endl;
+        
     return (0);
 }

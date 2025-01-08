@@ -6,7 +6,7 @@
 /*   By: nrobinso <nrobinso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 09:39:47 by nrobinso          #+#    #+#             */
-/*   Updated: 2025/01/08 12:18:15 by nrobinso         ###   ########.fr       */
+/*   Updated: 2025/01/08 16:08:19 by nrobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,6 @@ const Fixed Point::get_y(void) const{
 
     return (this->_y);
 };
-
 
 
 // output
