@@ -6,7 +6,7 @@
 /*   By: nrobinso <nrobinso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 10:10:02 by nrobinso          #+#    #+#             */
-/*   Updated: 2025/01/08 09:17:44 by nrobinso         ###   ########.fr       */
+/*   Updated: 2025/01/08 09:39:33 by nrobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -180,6 +180,7 @@ int Fixed::toInt(void) const {
 // return MAX ou MIN
 Fixed& Fixed::max(Fixed& a, Fixed& b) {
 
+    std::cout << "MAX called : ";
     if (a.getRawBits() > b.getRawBits())
         return (a);
     return (b);
@@ -187,6 +188,7 @@ Fixed& Fixed::max(Fixed& a, Fixed& b) {
 
 const Fixed& Fixed::max(const Fixed& a, const Fixed& b) {
 
+    std::cout << "const MAX called : ";
     if (a.getRawBits() > b.getRawBits())
         return (a);
     return (b);
@@ -194,6 +196,7 @@ const Fixed& Fixed::max(const Fixed& a, const Fixed& b) {
 
 Fixed& Fixed::min(Fixed& a, Fixed& b) {
 
+    std::cout << "MIN called : ";
     if (a.getRawBits() < b.getRawBits())
         return (a);
     return (b);
@@ -201,6 +204,7 @@ Fixed& Fixed::min(Fixed& a, Fixed& b) {
 
 const Fixed& Fixed::min(const Fixed& a, const Fixed& b) {
 
+    std::cout << "const MIN called : ";
     if (a.getRawBits() < b.getRawBits())
         return (a);
     return (b);
