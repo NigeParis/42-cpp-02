@@ -6,7 +6,7 @@
 /*   By: nrobinso <nrobinso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 10:10:02 by nrobinso          #+#    #+#             */
-/*   Updated: 2025/01/07 17:05:58 by nrobinso         ###   ########.fr       */
+/*   Updated: 2025/01/08 08:46:16 by nrobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,29 @@
 
 const int Fixed::_fractionBits = 8;
 
-Fixed::Fixed( void ): _fixedPoint(0) { 
-    // std::cout << "Default constructor called" << std::endl;
+// Default constructor
+Fixed::Fixed( void ): _fixedPoint(0) {
+     
 };
 
+// Copy constructor
 Fixed::Fixed(const Fixed    &fixed) {
-    // std::cout << "Copy constructor called" << std::endl;
     this->_fixedPoint = fixed._fixedPoint;
 }; 
 
+// Copy assignment operator
 Fixed &Fixed::operator=(const Fixed& nbr) {
-    // std::cout << "Copy assignment operator called" << std::endl;
 
     if (this != &nbr) 
         this->_fixedPoint = nbr.getRawBits();
     return (*this);
 };
 
+// Destructor
 Fixed::~Fixed(void) {
-    // std::cout << "Destructor called" << std::endl;
 };
 
-
+// increment / de-increment operators
 Fixed &Fixed::operator++(void) {
 
     ++this->_fixedPoint;
@@ -66,7 +67,7 @@ Fixed Fixed::operator--(int) {
     return (temp);
 };
 
-
+// maths operators
 Fixed Fixed::operator+(const Fixed& fixed) const {
     
     Fixed temp;
@@ -99,7 +100,7 @@ Fixed Fixed::operator/(const Fixed& fixed) const {
     return (temp);
 };
 
-
+//comparisons operators
 bool Fixed::operator<(const Fixed& fixed) const {
     
     if (this->_fixedPoint < fixed._fixedPoint)
@@ -142,27 +143,28 @@ bool Fixed::operator!=(const Fixed& fixed) const {
     return (false);
 };
 
-
+// Int constructor
 Fixed::Fixed( const int nbr ) { 
-    // std::cout << "Int constructor called" << std::endl;
+
     _fixedPoint = (roundf(nbr * (1 << _fractionBits)));
 };
 
+// Float constructor
 Fixed::Fixed( const float nbr ) { 
-    // std::cout << "Float constructor called" << std::endl;
+
     _fixedPoint = (roundf(nbr * (1 << _fractionBits)));
 };
 
+// get or set raw bits
 int Fixed::getRawBits( void ) const {
-    // std::cout << "getRawBits member function called" << std::endl;
+
     return (this->_fixedPoint);    
 };
 
 void Fixed::setRawBits(int const raw) {
-    // std::cout << "setRawBits member function called" << std::endl;    
+
     this->_fixedPoint = raw;
 };
-
 
 // convertions
 float Fixed::toFloat(void) const {
@@ -174,7 +176,6 @@ int Fixed::toInt(void) const {
 
     return static_cast<int>(this->getRawBits()) / (1 << this->_fractionBits );  
 };
-
 
 // return MAX ou MIN
 Fixed& Fixed::max(Fixed& a, Fixed& b) {
@@ -209,11 +210,8 @@ const Fixed& Fixed::min(const Fixed& a, const Fixed& b) {
     return (b);
 };
 
-
-
 // output
 std::ostream &operator<<(std::ostream &outputstream, const Fixed &fixed) {
     
     return outputstream << fixed.toFloat();
 };
-
