@@ -162,4 +162,5 @@ whether a point is inside a triangle or not. 🛠️
 
 - **Scientific programming** 🔬: Ensuring your data remains spot on.
 
-Fixed-point numbers are here to elevate your coding game. Embrace the change and enjoy the ride! 🎉
+Fixed-point numbers are here to elevate your coding game.
+Embrace the change and enjoy the ride! 🎉
