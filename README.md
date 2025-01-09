@@ -41,7 +41,7 @@ Fixed-point numbers are particularly useful in:
 
 Sure thing! Here's everything compiled into one Markdown file:
 
-```markdown
+
 # Exercises for Fixed-Point Number Class
 
 ## Exercise 00: My First Class in Orthodox Canonical Form 🎓
