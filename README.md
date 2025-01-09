@@ -157,7 +157,16 @@ Add these public overloaded member functions to your class:
 ### Putting It All Together
 Now that your Fixed class is fully functional, 
 let’s put it to use! </br> Implement a function that indicates 
-whether a point is inside a triangle or not. 🛠️
+whether a point is inside a triangle or not. 🛠️ </br>
+
+```cpp
+bool    bsp( Point const a, Point const b, Point const c, Point const point) {
+
+   //code
+}
+
+```
+
 ![Screenshot from 2025-01-09 14-03-46](https://github.com/user-attachments/assets/f3dad5c3-11b3-4065-8e83-1a2bb397c633)
 
 ![Screenshot from 2025-01-09 14-04-09](https://github.com/user-attachments/assets/a0d2e0e5-fce3-4a74-8b07-7117d0f1ed16)
