@@ -156,7 +156,7 @@ Add these public overloaded member functions to your class:
 
 ### Putting It All Together
 Now that your Fixed class is fully functional, 
-let’s put it to use! Implement a function that indicates 
+let’s put it to use! </br> Implement a function that indicates 
 whether a point is inside a triangle or not. 🛠️
 ```
 
