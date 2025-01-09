@@ -158,6 +158,13 @@ Add these public overloaded member functions to your class:
 Now that your Fixed class is fully functional, 
 let’s put it to use! </br> Implement a function that indicates 
 whether a point is inside a triangle or not. 🛠️
+![Screenshot from 2025-01-09 14-03-46](https://github.com/user-attachments/assets/f3dad5c3-11b3-4065-8e83-1a2bb397c633)
+![Screensh![Screenshot from 2025-01-09 14-04-27](https://github.com/user-attachments/assets/7b06b120-04bd-4a27-9a7c-66eab7d2b85d)
+ot from 2025-01-09 14-04-09](https://github.com/user-attachments/assets/6101c009-91d0-4f85-b7fd-631cd07879ea)
+
+
+
+
 ```
 
 - **Scientific programming** 🔬: Ensuring your data remains spot on.
