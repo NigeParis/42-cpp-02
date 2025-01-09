@@ -155,7 +155,9 @@ Add these public overloaded member functions to your class:
 ## Exercise 03: BSP - Bonus 🎁
 
 ### Putting It All Together
-Now that your Fixed class is fully functional, </br> let’s put it to use! Implement a function that indicates whether a point is inside a triangle or not. 🛠️
+Now that your Fixed class is fully functional, 
+let’s put it to use! Implement a function that indicates 
+whether a point is inside a triangle or not. 🛠️
 ```
 
 - **Scientific programming** 🔬: Ensuring your data remains spot on.
