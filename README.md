@@ -159,10 +159,12 @@ Now that your Fixed class is fully functional,
 let’s put it to use! </br> Implement a function that indicates 
 whether a point is inside a triangle or not. 🛠️
 ![Screenshot from 2025-01-09 14-03-46](https://github.com/user-attachments/assets/f3dad5c3-11b3-4065-8e83-1a2bb397c633)
-![Screensh![Screenshot from 2025-01-09 14-04-27](https://github.com/user-attachments/assets/7b06b120-04bd-4a27-9a7c-66eab7d2b85d)
+
+![Screenshot from 2025-01-09 14-04-09](https://github.com/user-attachments/assets/a0d2e0e5-fce3-4a74-8b07-7117d0f1ed16)
+
+![Screenshot from 2025-01-09 14-04-27](https://github.com/user-attachments/assets/7b06b120-04bd-4a27-9a7c-66eab7d2b85d)
 
 
-![Screenshot from 2025-01-09 14-04-27](https://github.com/user-attachments/assets/4f6f8487-2db1-4b3e-8e2f-ed8c074c1694)
 
 
 
