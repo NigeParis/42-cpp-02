@@ -6,7 +6,7 @@
 /*   By: nrobinso <nrobinso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 09:39:47 by nrobinso          #+#    #+#             */
-/*   Updated: 2025/01/08 16:12:36 by nrobinso         ###   ########.fr       */
+/*   Updated: 2025/01/09 09:29:05 by nrobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,9 +50,7 @@ std::ostream &operator<<(std::ostream &outputstream, const Point &point) {
     
     outputstream 
     << "x : " 
-    << std::setw(9) 
     << point.get_x() 
-    << std::setw(9) 
     << " y : " 
     << point.get_y();
     return (outputstream);

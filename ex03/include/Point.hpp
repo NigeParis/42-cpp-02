@@ -6,7 +6,7 @@
 /*   By: nrobinso <nrobinso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 09:36:10 by nrobinso          #+#    #+#             */
-/*   Updated: 2025/01/08 16:12:19 by nrobinso         ###   ########.fr       */
+/*   Updated: 2025/01/09 09:28:29 by nrobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #ifndef POINT_HPP
 #define POINT_HPP
 #include <iostream>
-#include <iomanip>
 #include "./include/Fixed.hpp"
 
 class Point {

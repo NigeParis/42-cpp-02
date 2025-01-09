@@ -6,12 +6,11 @@
 /*   By: nrobinso <nrobinso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 10:06:58 by nrobinso          #+#    #+#             */
-/*   Updated: 2025/01/08 16:07:46 by nrobinso         ###   ########.fr       */
+/*   Updated: 2025/01/09 09:28:15 by nrobinso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include <iomanip>
 #include "./include/Point.hpp"
 #include "./include/Bsp.hpp"
 
