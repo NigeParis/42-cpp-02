@@ -47,30 +47,6 @@ Fixed-point numbers are particularly useful in:
 ### The Journey Begins
 Your first steps into the world of class design were promising, but our class currently represents a grand total of... 0.0. Time to spice things up!
 
-### Level Up: Constructor Edition
-Add these public constructors and member functions to your class:
-- **Integer Constructor**: Takes a constant integer and converts it to a fixed-point value with 8 fractional bits.
-   ```cpp
-   Fixed(const int value);
-   ```
-- **Floating-Point Constructor**: Takes a constant floating-point number and converts it to a fixed-point value with 8 fractional bits.
-   ```cpp
-   Fixed(const float value);
-   ```
-- **Convert to Float**: `float toFloat(void) const;` Transforms the fixed-point value into a floating-point value.
-   ```cpp
-   float toFloat(void) const;
-   ```
-- **Convert to Int**: `int toInt(void) const;` Transforms the fixed-point value into an integer value.
-   ```cpp
-   int toInt(void) const;
-   ```
-
-### Stream Magic
-Add an overload of the insertion (`<<`) operator to insert a floating-point representation of the fixed-point number into the output stream object passed as a parameter.
-   ```cpp
-   friend std::ostream &operator<<(std::ostream &out, const Fixed &fixed);
-   ```
 
 ## Exercise 01: Towards a More Useful Fixed-Point Number Class
 
