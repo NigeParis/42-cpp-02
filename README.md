@@ -1,113 +1,111 @@
-# New Class Code Playbook 🎉
+Of course! Here's the revised version without emojis:
 
-## 1. Welcome to the Orthodox Canonical Form Club! 🎓
+# New Class Code Playbook
+
+## 1. Welcome to the Orthodox Canonical Form Club!
 From now on, all your classes must join the exclusive ranks of the Orthodox Canonical Form, unless you receive special clearance otherwise.
 
-## 2. The Fantastic Four! 👑
+## 2. The Fantastic Four!
 To join the club, each class must feature these four superstar members:
-- **Default constructor** (The magic opener 🪄)
-- **Copy constructor** (The clone master 🧬)
-- **Copy assignment operator** (The switcheroo artist 🔄)
-- **Destructor** (The clean-up crew 🧹)
+- **Default constructor** (The magic opener)
+- **Copy constructor** (The clone master)
+- **Copy assignment operator** (The switcheroo artist)
+- **Destructor** (The clean-up crew)
 
-## 3. Divide and Conquer! ⚔️
+## 3. Divide and Conquer!
 - **Header file (.hpp/.h):** Contains the class's royal decree (definition).
 - **Source file (.cpp):** Implements the class's grand plan (implementation).
 
-# You Think You Know Numbers? Think Again! 😏
+# You Think You Know Numbers? Think Again!
 
-## Step 1: The Basics 🤔
+## Step 1: The Basics
 Up until now, you've been working with:
 - **Integers** and their buddies (short, char, long, etc.)
 - **Floating-point numbers** and their cousins (float, double, etc.)
 
 These have been your go-to number types in coding.
 
-## Step 2: Opposite Characteristics ⚖️
+## Step 2: Opposite Characteristics
 Integers and floating-point numbers couldn't be more different in their characteristics. It’s a classic case of opposites attract.
 
-## Step 3: Meet the Game Changer 🚀
+## Step 3: Meet the Game Changer
 Introducing **fixed-point numbers**—your new best friend in coding! Fixed-point numbers strike the perfect balance between:
-- **Performance** 💨
-- **Accuracy** 🎯
-- **Range** 📏
-- **Precision** 🔬
+- **Performance**
+- **Accuracy**
+- **Range**
+- **Precision**
 
-## Why Should You Care? 🤷‍♂️
+## Why Should You Care?
 Fixed-point numbers are particularly useful in:
-- **Computer graphics** 🎨: For flawless visual calculations.
-- **Sound processing** 🎵: Keeping your audio crisp and clear.
-
-
-Sure thing! Here's everything compiled into one Markdown file:
-
+- **Computer graphics**: For flawless visual calculations.
+- **Sound processing**: Keeping your audio crisp and clear.
 
 # Exercises for Fixed-Point Number Class
 
-## Exercise 00: My First Class in Orthodox Canonical Form 🎓
+## Exercise 00: My First Class in Orthodox Canonical Form
 
 ### The Journey Begins
-Your first steps into the world of class design were promising, but our class currently represents a grand total of... 0.0. 🥲 Time to spice things up! 🌶️
+Your first steps into the world of class design were promising, but our class currently represents a grand total of... 0.0. Time to spice things up!
 
-### Level Up: Constructor Edition 🚀
+### Level Up: Constructor Edition
 Add these public constructors and member functions to your class:
-- **Integer Constructor** 🧮: Takes a constant integer and converts it to a fixed-point value with 8 fractional bits.
+- **Integer Constructor**: Takes a constant integer and converts it to a fixed-point value with 8 fractional bits.
    ```cpp
    Fixed(const int value);
    ```
-- **Floating-Point Constructor** 🌊: Takes a constant floating-point number and converts it to a fixed-point value with 8 fractional bits.
+- **Floating-Point Constructor**: Takes a constant floating-point number and converts it to a fixed-point value with 8 fractional bits.
    ```cpp
    Fixed(const float value);
    ```
-- **Convert to Float** 🧊: `float toFloat(void) const;` Transforms the fixed-point value into a floating-point value.
+- **Convert to Float**: `float toFloat(void) const;` Transforms the fixed-point value into a floating-point value.
    ```cpp
    float toFloat(void) const;
    ```
-- **Convert to Int** 🏃‍♂️: `int toInt(void) const;` Transforms the fixed-point value into an integer value.
+- **Convert to Int**: `int toInt(void) const;` Transforms the fixed-point value into an integer value.
    ```cpp
    int toInt(void) const;
    ```
 
-### Stream Magic ✨
+### Stream Magic
 Add an overload of the insertion (`<<`) operator to insert a floating-point representation of the fixed-point number into the output stream object passed as a parameter.
    ```cpp
    friend std::ostream &operator<<(std::ostream &out, const Fixed &fixed);
    ```
 
-## Exercise 01: Towards a More Useful Fixed-Point Number Class 💡
+## Exercise 01: Towards a More Useful Fixed-Point Number Class
 
 ### Enhancing the Foundation
-Our previous class was a humble beginning, but let's push its boundaries. 🌟 Here’s how to level up:
+Our previous class was a humble beginning, but let's push its boundaries. Here’s how to level up:
 
-### Constructor Upgrades 🛠️
-- **Integer Constructor** 🧮: Transforms a constant integer into a fixed-point value with 8 fractional bits.
+### Constructor Upgrades
+- **Integer Constructor**: Transforms a constant integer into a fixed-point value with 8 fractional bits.
    ```cpp
    Fixed(const int value);
    ```
-- **Floating-Point Constructor** 🌊: Converts a constant floating-point number into a fixed-point value with 8 fractional bits.
+- **Floating-Point Constructor**: Converts a constant floating-point number into a fixed-point value with 8 fractional bits.
    ```cpp
    Fixed(const float value);
    ```
 
-### Transformation Skills 🔄
-- **Convert to Float** 🧊: `float toFloat(void) const;` Transforms the fixed-point value into a floating-point value.
+### Transformation Skills
+- **Convert to Float**: `float toFloat(void) const;` Transforms the fixed-point value into a floating-point value.
    ```cpp
    float toFloat(void) const;
    ```
-- **Convert to Int** 🏃‍♂️: `int toInt(void) const;` Transforms the fixed-point value into an integer value.
+- **Convert to Int**: `int toInt(void) const;` Transforms the fixed-point value into an integer value.
    ```cpp
    int toInt(void) const;
    ```
 
-### Stream Magic ✨
+### Stream Magic
 Add an overload of the insertion (`<<`) operator to insert a floating-point representation of the fixed-point number into the output stream object passed as a parameter.
    ```cpp
    friend std::ostream &operator<<(std::ostream &out, const Fixed &fixed);
    ```
 
-## Exercise 02: Now We’re Talking 🗣️
+## Exercise 02: Now We’re Talking
 
-### Operator Overload Party 🎉
+### Operator Overload Party
 Add public member functions to overload these operators:
 - **Comparison Operators**: `>`, `<`, `>=`, `<=`, `==`, and `!=`.
    ```cpp
@@ -133,7 +131,7 @@ Add public member functions to overload these operators:
    Fixed operator--(int);    // Post-decrement
    ```
 
-### Superpowers: Min and Max 🏅
+### Superpowers: Min and Max
 Add these public overloaded member functions to your class:
 - **Static Min**: Takes two references to fixed-point numbers and returns a reference to the smallest one.
    ```cpp
@@ -152,12 +150,10 @@ Add these public overloaded member functions to your class:
    static const Fixed &max(const Fixed &a, const Fixed &b);
    ```
 
-## Exercise 03: BSP - Bonus 🎁
+## Exercise 03: BSP - Bonus
 
 ### Putting It All Together
-Now that your Fixed class is fully functional, 
-let’s put it to use! </br> Implement a function that indicates 
-whether a point is inside a triangle or not. 🛠️ </br>
+Now that your Fixed class is fully functional, let’s put it to use! Implement a function that indicates whether a point is inside a triangle or not.
 
 ```cpp
 bool    bsp( Point const a, Point const b, Point const c, Point const point) {
@@ -173,13 +169,7 @@ bool    bsp( Point const a, Point const b, Point const c, Point const point) {
 
 ![Screenshot from 2025-01-09 14-04-27](https://github.com/user-attachments/assets/7b06b120-04bd-4a27-9a7c-66eab7d2b85d)
 
-
-
-
-
-```
-
-- **Scientific programming** 🔬: Ensuring your data remains spot on.
+- **Scientific programming**: Ensuring your data remains spot on.
 
 Fixed-point numbers are here to elevate your coding game.
-Embrace the change and enjoy the ride! 🎉
+Embrace the change and enjoy the ride!
