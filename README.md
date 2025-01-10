@@ -16,7 +16,6 @@ To join the club, each class must feature these four superstar members:
 - **Header file (.hpp/.h):** Contains the class's royal decree (definition).
 - **Source file (.cpp):** Implements the class's grand plan (implementation).
 
-# You Think You Know Numbers? Think Again!
 
 ## Step 1: The Basics
 Up until now, you've been working with:
