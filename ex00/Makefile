@@ -7,7 +7,7 @@ CFLAGS=  -Wall -Wextra -Werror -std=c++98
 SRCS=$(addprefix $(SRC_DIR), $(SRC))
 OBJ=$(SRC:.cpp=.o)
 OBJS=$(addprefix $(OBJ_DIR), $(OBJ))
-
+ 
 INCLUDE = -I./
 
 CC=c++
